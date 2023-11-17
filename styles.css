@@ -6,12 +6,13 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    transition: background-color 1s ease; /* Smooth transition effect */
+    transition: background-color 1s ease;
 }
 
-.content {
+.intro {
     text-align: center;
-    
+    font-family:'Times New Roman', Times, serif;
+
 }
 
 h1 {
