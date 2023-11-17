@@ -1,24 +1,25 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
     transition: background-color 1s ease;
 }
 
 .intro {
     text-align: center;
-    font-family:'Times New Roman', Times, serif;
-
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    top: 2x;
+    color: aliceblue;
 }
 
-h1 {
-    margin-bottom: 10px;
+.introductory_video {
+    display: flex;
+    justify-content:center;
+    outline-width: 200px;
+    outline-color: blueviolet;
 }
 
-p {
-    margin: 0;
+.description{
+    text-indent: 50px;
+    font-family: fantasy;
+    top:2x;
 }

@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
     const colorPalette = [
-        "#00072D", // Dark Blue
+        "#FFA500", // Dark Blue
         "#00073D", // Blue
     ];
 
@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         
         // Schedule the next background change after 2 seconds
-        setTimeout(changeBackgroundColor, 10000);
+        setTimeout(changeBackgroundColor, 2000);
     }
 
     // Start the dynamic background change
