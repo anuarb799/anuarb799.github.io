@@ -8,7 +8,7 @@ body {
     text-align: center;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     top: 2x;
-    color: aliceblue;
+    color: rgb(0, 0, 0);
 }
 
 .introductory_video {
@@ -18,8 +18,17 @@ body {
     outline-color: blueviolet;
 }
 
-.description{
+.asd{
+    margin-top: 30px;
+    margin-left: 250px;
     text-indent: 50px;
     font-family: fantasy;
     top:2x;
+}
+.description{
+    margin-top: 50px;
+    margin-left: 100px;
+    font-family:'Courier New', Courier, monospace;
+
+
 }

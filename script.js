@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
     const colorPalette = [
         "#FFA500", // Dark Blue
-        "#00073D", // Blue
+        "#F7BE6D", // Blue
     ];
 
     let currentIndex = 0;
@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // Update the body background color
         document.body.style.backgroundColor = currentColor;
-
+        
        if(currentIndex == 1){
             up = false
        }
@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         
         // Schedule the next background change after 2 seconds
-        setTimeout(changeBackgroundColor, 2000);
+        setTimeout(changeBackgroundColor, 6000);
     }
 
     // Start the dynamic background change
