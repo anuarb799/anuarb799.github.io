@@ -31,11 +31,29 @@
             display:inline-block;
         }
 
-        video {
-            width: 80%; /* Adjust the width as needed */
-            max-width: 800px; /* Set a maximum width to prevent the video from becoming too large */
-            display: block; /* Center the video horizontally */
-            margin: 0 auto; /* Center the video horizontally */
+        .media-element {
+            max-width: 60%; /* Adjust the width as needed */
+            height: auto; /* Maintain aspect ratio */
+        }
+
+        .videos {
+            display: flex; /* Use flexbox for layout */
+            justify-content: space-between; /* Space the elements evenly */
+            align-items: center; /* Align items vertically in the center */
+        }
+        .second{
+            text-align: center;
+        }
+        .video-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Apply styles for the video element */
+        .video-element {
+            max-width: 100%; /* Adjust the width as needed */
+            height: auto; /* Maintain aspect ratio */
         }
 
 
@@ -56,7 +74,7 @@
         
         <section class="first">
             <h3>Geographic Information System</h3>
-            <ul>
+            <ul class="meow">
                 <h4>Skills Applied</h4>
                 <li>C++</li>
                 <li>Data Structures/Algorithms</li>
@@ -65,10 +83,53 @@
             </ul>
         </section>
 
-        <video width="400" controls>
-            <source src="Resources/IntroVid1.mp4" type="video/mp4">
-            Demo of the GIS
-        </video>
+
+        <div class="videos">
+            <video width="400" controls>
+                <source src="Resources/IntroVid1.mp4" class="media-element">
+                Demo of the GIS
+            </video>
+            <video width="400" controls>
+                <source src="Resources/My Movie.mp4" class="media-element">
+                Demo of the GIS
+            </video>
+        </div>
+
+        <section class="second">
+            <ul class="meow">
+                <h4>APIs used: </h4>
+                <li>TomTom-> Retrieval of Live Traffic Information</li>
+                <li>OpenWeatherMap-> Retrieval of Live Weather Information</li>
+                <li>OpenStreetMap-> Retrieval of General Information</li>
+            </ul>
+        </section>
+        
+        <div class="video-container">
+            <video controls class="video-element">
+                <source src="Resources/APIs.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+        <section class="second">
+            <ul class="meow">
+                <h4>Algorithms: </h4>
+                <li>Djikstra</li>
+                <li>A* Pathfinding</li>
+                <li>Text Suggestions</li>
+            </ul>
+        </section>
+
+        <div class="video-container">
+            <video controls class="video-element">
+                <source src="Resources/A-star.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+        
+
+        
 
 
 
