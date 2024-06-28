@@ -7,7 +7,7 @@ const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 0.1, 1000);
 const loader = new THREE.TextureLoader();
 
-const basiclayout = loader.load("/Resources/2_no_clouds_16k.jpg");
+const basiclayout = loader.load('/Resources/2_no_clouds_16k.jpg');
 const bumplayout = loader.load("/Resources/elev_bump_16k.jpg");
 const citylights =  loader.load("Resources/cities_16k.png");
 const countryboundaries = loader.load("Resources/boundaries_16k.png");
