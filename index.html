@@ -1,104 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anuar B.</title>
-    <style>
-        .skills{
-            display: flex;
-            justify-content: space-between;
-        }
-
-        .main_head{
-            text-align: center;
-        }
-
-        nav {
-            text-align: center;
-            margin-top: 20px;
-        }
-
-        nav a {
-            text-decoration: none;
-            padding: 5px 10px;
-            background-color: #007bff;
-            color: #fff;
-            border-radius: 5px;
-            margin-right: 10px;
-        }
-
-        .intro{
-            text-align: center;
-        }
-    </style>
-</head>
-<body>
-
-    <header>
-        <h1 class="main_head">Anuar</h1>
-        <!-- Change "Web Developer" to a link -->
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="projects.html">Projects</a>
-        </nav>
-    </header>
-
-    <section>
-        <h2>About Me</h2>
-        <p class="intro">
-            A result oriented aspiring software engineer with over 7 years of experience in coding. I am passionate about finding optimal and creative solutions to inherently complex problems. Years of international experience in Kazakhstan, Ukraine, Czechia, and Switzerland molded me into an open-minded, reflective, and resilient individual, committed to integrity.
-        </p>
-    </section>
-
-
-    <h2>Skills</h2>
-    <section class="skills">
-        <!-- First List -->
-        <ul>
-            <h3>Front-End</h3>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JS</li>
-            <li>React + Native</li>
-            <li>REST APIs</li>
-            <li>Selenium</li>
-            <li>Cypress</li>
-        </ul>
-
-        <ul>
-            <h3>Back-End</h3>
-            <li>Python</li>
-            <li>Java</li>
-            <li>SQL</li>
-            <li>Express</li>
-            <li>Django</li>
-            <li>Ruby On Rails</li>
-            <li>C</li>
-            <li>C++</li>
-            <li>C#</li>
-        </ul>
-
-        <ul>
-            <h3>Embedded Systems</h3>
-            <li>FPGAs (DE1-SoC)</li>
-            <li>STM32</li>
-            <li>ARM</li>
-            <li>Verilog</li>
-        </ul>
-    </section>
-
-    <section>
-        <h2>Education</h2>
-        <p>BASc - Computer Engineering & Engineering Business Minor- University of Toronto, 2025</p>
-    </section>
-
-    <section>
-        <h2>Contact</h2>
-        <p>Email: anuar.bekturganov@mail.utoronto.ca</p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/anuar-bekturganov-a59126218/" target="_blank">Link</a></p>
-        <p>GitHub: <a href="https://github.com/anuarb799" target="_blank">Link</a></p>
-    </section>
-
-</body>
+	<head>
+		<meta charset="utf-8">
+		<title>Anuar B.</title>
+		<link rel="stylesheet" href="styles.css">
+	</head>
+	<body>
+		<script type="module" src="/main.js"></script>
+		<div id="intro"></div>
+		<div id="ufo_prompt">Click on the UFO to see projects</div>
+		<div id="credits">
+			<ul>
+				<li>Earth Textures: Tom Patterson, www.shadedrelief.com </li>
+				<li>Flag Models: https://sketchfab.com/Spaceexplorersacademy</li>
+				<li>UFO Model: https://sketchfab.com/BlackHawk0512</li>
+			</ul>
+		</div>
+		<div class="typing-container" id="typing-container" style="display: none;">
+			<span id="typed-text"></span><span class="cursor">|</span>
+			<button class="close-button" id="close-button">X</button>
+		</div>
+	</body>
 </html>

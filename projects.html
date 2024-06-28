@@ -1,140 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anuar B. - Projects</title>
-    <style>
-
-        .main_head{
-            text-align: center;
-        }
-
-        nav {
-            text-align: center;
-            margin-top: 20px;
-        }
-
-        nav a {
-            text-decoration: none;
-            padding: 5px 10px;
-            background-color: #007bff;
-            color: #fff;
-            border-radius: 5px;
-            margin-right: 10px;
-        }
-
-        .first{
-            text-align: center;
-        }
-        ul{
-            display:inline-block;
-        }
-
-        .media-element {
-            max-width: 60%; /* Adjust the width as needed */
-            height: auto; /* Maintain aspect ratio */
-        }
-
-        .videos {
-            display: flex; /* Use flexbox for layout */
-            justify-content: space-between; /* Space the elements evenly */
-            align-items: center; /* Align items vertically in the center */
-        }
-        .second{
-            text-align: center;
-        }
-        .video-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        /* Apply styles for the video element */
-        .video-element {
-            max-width: 100%; /* Adjust the width as needed */
-            height: auto; /* Maintain aspect ratio */
-        }
-
-
-    </style>
+    <meta charset="utf-8">
+    <title>Personal Web</title>
+    <link rel="stylesheet" href="stylesproject.css">
 </head>
 <body>
+    <div id="background"></div>
+    <div id="top_intro">Anuar Bekturganov</div>
+    <div id="top_right_intro">anuar.bekturganov@mail.utoronto.ca</div>
+    <div id="first_description">University of Toronto</div>
+    <div id="year_uoft">2021-2026 exp. (2T5 + COOP)</div>
+    <div id="back_uoft">Major: Computer Engineering  & Minor: Engineering Business</div>
+    <div id="courses_intro">Relevant Courses:</div>
+        <ul class="course-list">
+            <li>ECE345 - Algorithms and Data Structures</li>
+            <li>ECE344 - Operating Systems</li>
+            <li>ECE243 - Computer Organization</li>
+            <li>ECE297 - Communications and Design</li>
+            <li>APS360 - Applied Fundamentals of Deep Learning</li>
+            <li>ECE342 - Computer Hardware</li>
+            <li>ECE241 - Digital Systems</li>
+            <li>ECE216 - Signals and Systems</li>
+        </ul>
+    
+    <div id="experience_intro">Experiences:</div>
+    <div id="jusan_intro">Jusan Invest</div>
+    <div id="jusan_year">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;Software Engineering Internship<br>&nbsp;&nbsp;Almaty, Kazakhstan June 2023 - August 2023</div>
+    <div id="jusan_description"> <ul id="jusan_main_body">
+        <li>
+        Worked in the frontend team of “Jusan Invest”, a subsidiary of one of Kazakhstan’s largest banks Jusan
+        focusing on investment banking.</li>
+        <li> Developed a new regression testing suite, covering major frontend components of the Jusan web
+        application using Cypress and Selenium frameworks, which helped reduce the amount of code bugs by
+        23%.</li>
+        <li> Implemented a test coverage visualization tool in GitLab, which brought up overall teams code
+        coverage from 25% to 95%.</li>
+        <li> Improved overall management of docker images by reducing their size, and deployment scripts by
+        modifying tests which caused delayed feedback, resulting in increased deployment speed.</li>
+        <li> Collaborated in the development of a limited time event at Jusan Invest: “Raffle” where I was a part of
+        the team responsible for developing frontend for the mobile application (React Native).</li>
+    </ul> </div>
+    <img id="ji_logo_id"
+     src="ji_logo.png"
+     alt="jusan_invest logo">
 
-    <header>
-        <h1 class="main_head">Anuar</h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="projects.html">Projects</a>
-        </nav>
-    </header>
+    <div id="lifestream_intro">Lifestream</div>
+    <div id="lifestream_year">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;Software Engineering Internship<br>&nbsp;&nbsp;Almaty, Kazakhstan June 2022 - August 2022</div>
+    <div id="lifestream_description"> <ul id="lifestream_main_body">
+        <li>Created an OTT (providing media services directly to consumers) platform “Smotreshka.TV” at
+        Lifestream, a video systems integration company.</li>
+        <li>Designed regression tests using Cypress and Selenium for front-end components of the service for
+        newly developed components.</li>
+        <li>Collaborated on improving the RTSP client using the GStreammer library (C++). It was my first
+        experience of solving challenging problems associated with efficiency of the service.</li>
+    </ul> </div>
+    <img id="life_stream_logo_id"
+      src="new_life_logo.jpg"
+      alt="lifestream logo">
 
-    <section>
-        <h2>Projects</h2>
-        
-        <section class="first">
-            <h3>Geographic Information System</h3>
-            <ul class="meow">
-                <h4>Skills Applied</h4>
-                <li>C++</li>
-                <li>Data Structures/Algorithms</li>
-                <li>OpenGL</li>
-                <li>APIs</li>
-            </ul>
-        </section>
+    <div id="projects_intro">Projects:</div>
 
+    <div id="GIS_intro">Geographic Information System:</div>
 
-        <div class="videos">
-            <video width="400" controls>
-                <source src="Resources/IntroVid1.mp4" class="media-element">
-                Demo of the GIS
-            </video>
-            <video width="400" controls>
-                <source src="Resources/My Movie.mp4" class="media-element">
-                Demo of the GIS
-            </video>
-        </div>
+    <div id="gis_demo">
+        <iframe width="1080" height="720" src="https://www.youtube.com/embed/5z04O_qTp3s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+        </iframe>
+    </div>
+    <div id="GIS_description"> <ul id="lifestream_main_body">
+        <li>Group Project (ECE297): created a GIS from scratch</li>
+        <li>Coding done in C/C++</li>
+        <li>Graphics Library: OpenGL</li>
+        <li>Raw Geographic Data: OpenStreetMap</li>
+        <li>Live Traffic Data: TomTom</li>
+        <li>Live Weather Data: OpenWeatherMap</li>
+        <li>Pathfinding: A* & Dijkstra</li>
+        <li>Smart Text Suggestions: BK-Trees</li>
+        <li>Level of Detail Loaded According to Zoom Level for Responsiveness</li>
+    </ul> </div>
 
-        <section class="second">
-            <ul class="meow">
-                <h4>APIs used: </h4>
-                <li>TomTom-> Retrieval of Live Traffic Information</li>
-                <li>OpenWeatherMap-> Retrieval of Live Weather Information</li>
-                <li>OpenStreetMap-> Retrieval of General Information</li>
-            </ul>
-        </section>
-        
-        <div class="video-container">
-            <video controls class="video-element">
-                <source src="Resources/APIs.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-        </div>
+    <div id="acne_intro">Acne Detection & Localization</div>
+    <a id="acne_git" href="https://github.com/mmaciesowicz/APS360-Acne-Detection">Repository</a>
+    <img id="acne_demo" src="acne_demo.png" alt="acne_demo_">
+    <img id="acne_model" src="4_class_architecture.jpeg" alt="acne_demo_">
+    <img id="acne_work" src="workflow_diagram_v2.jpg" alt="acne_demo_">
 
-        <section class="second">
-            <ul class="meow">
-                <h4>Algorithms: </h4>
-                <li>Djikstra</li>
-                <li>A* Pathfinding</li>
-                <li>Text Suggestions</li>
-            </ul>
-        </section>
-
-        <div class="video-container">
-            <video controls class="video-element">
-                <source src="Resources/A-star.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-        </div>
-
-        
-
-        
+    <div id="acne_description"> <ul id="acne_main_body">
+        <li>Group Project (APS360): created an acne detection and localization tool</li>
+        <li>Coding done in Python</li>
+        <li>Libraries Used: PyTorch, Numpy, Pandas</li>
+        <li>ACNE04 Dataset</li>
+        <li>Data Processing: Removing Poor Quality Images Using Hugging Face</li>
+        <li>Trying Out Various Architectures, Ultimately a Simple Architecture Was Chosen Due to Poor Quality of Data</li>
+        <li>Development of RCNN Algorithm</li>
+        <li>Accuracy: 62% Precision: 73%</li>
+    </ul> </div>
 
 
-
-
-    </section>
+    <div id="gyro_intro">Digital Pen</div>
+    <img id="pen_demo" src="pen_demo.png" alt="pen_demo_">                                                                                                                                                                                                         </div>
+    <div id="pen_description"> <ul id="acne_main_body">
+        <li>Microcontroller Used: STM32F4 series</li>
+        <li>Gyroscope/Accelerometer</li>
+        <li>Peripheral is attached on top of a regular bullet pen (3D printed model)</li>
+        <li>Position of the pen is estimated using readings from gyroscope and accelerometer based on Kalman filter (Complementary Filter in earlier iterations)</li>
+        <li>Then when a user draws something on regular paper (or on any medium), we get the copy of the drawing in digital format</li>
+        <li>Currently, the accuracy is quite limited (user needs to make large displacements with the pen)</li>
+        <li>Communication with I2C (DMA)</li>
+        <li>Future iteration will use very sensitive magnetometer to make better predictions</li>
+    </ul> </div>
+    <script type="module" src="projects_.js"></script>
 
 </body>
 </html>
