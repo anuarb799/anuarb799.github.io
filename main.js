@@ -174,7 +174,6 @@ loaderkzflag.load('ukrflag.glb', function(gltf) {
     flagmap.set('ukrid', ukrflag.uuid);
     let lat = 50.3 * (Math.PI/180);
     let lon = 149.5 * (Math.PI/180);
-    console.log(ukrflag.uuid);
     ukrflag.position.set(
         Math.cos(lat) * Math.cos(lon) * 1,
         Math.sin(lat) * 1,
@@ -229,7 +228,6 @@ loaderkzflag.load('swiflag.glb', function(gltf) {
     scene.add(swiflag);
 
     animated_swi = new THREE.AnimationMixer(swiflag);
-    //console.log(animated_swi.uuid);
     gltf.animations.forEach((clip) => {
         animated_swi.clipAction(clip).play();
     });
@@ -359,7 +357,6 @@ function onMouseClick(event) {
     const intersects = raycaster.intersectObjects(all_objects);
     let posone = null;
     if (intersects.length > 0) {
-        console.log(intersects);
         //ukr -> 18
         /*
         try{
@@ -389,7 +386,6 @@ function onMouseClick(event) {
                 }
         
                 if(currentsel !== null){
-                    console.log('Current Selection:', currentsel, currentval);
                     break;
                 }
             }
