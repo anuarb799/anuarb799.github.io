@@ -1,6 +1,6 @@
-import * as THREE from '../node_modules/three/build/three.module.js';
-import { OrbitControls } from '../node_modules/three/examples/jsm/Addons.js';
-import { GLTFLoader } from '../node_modules/three/addons/loaders/GLTFLoader.js';
+import * as THREE from "/node_modules/three/build/three.module.js";
+import { OrbitControls } from "/node_modules/three/examples/jsm/Addons.js";
+import { GLTFLoader } from "/node_modules/three/addons/loaders/GLTFLoader.js";
 import getStarfield from "/creatingstars.js";
 
 const scene = new THREE.Scene();
