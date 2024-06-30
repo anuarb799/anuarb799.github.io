@@ -1,16 +1,16 @@
-import * as THREE from 'three';
-import { OrbitControls } from 'three/examples/jsm/Addons.js';
-import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
-import getStarfield from "/creatingstars.js";
+import * as THREE from "three";
+import { OrbitControls } from 'jsm/controls/OrbitControls.js';
+import { GLTFLoader } from 'jsm/loaders/GLTFLoader.js';
+import getStarfield from "./src/creatingstars.js";
 
 const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 0.1, 1000);
 const loader = new THREE.TextureLoader();
 
-const basiclayout = loader.load('/Resources/2_no_clouds_16k.jpg');
-const bumplayout = loader.load("/Resources/elev_bump_16k.jpg");
-const citylights =  loader.load("Resources/cities_16k.png");
-const countryboundaries = loader.load("Resources/boundaries_16k.png");
+const basiclayout = loader.load("./Resources/earth/2_no_clouds_16k.jpg");
+const bumplayout = loader.load("./Resources/earth/elev_bump_16k.jpg");
+const citylights =  loader.load("./Resources/earth/cities_16k.png");
+const countryboundaries = loader.load("./Resources/earth/boundaries_16k.png");
 
 camera.position.x = -2.7512;
 camera.position.y = 2.001098;
@@ -123,7 +123,7 @@ const flagmap = new Map();
 let ufo;
 const loaderkzflag = new GLTFLoader();
 let ufo_animated;
-loaderkzflag.load('ufomoving.glb', function(gltf) {
+loaderkzflag.load("./Resources/earth/ufomoving.glb", function(gltf) {
     ufo = gltf.scene;
 
     ufo.scale.set(0.1,0.1,0.1);
@@ -143,7 +143,7 @@ loaderkzflag.load('ufomoving.glb', function(gltf) {
 
 let kazakhflag;
 let animated;
-loaderkzflag.load('kazflagmod.glb', function(gltf) {
+loaderkzflag.load("./Resources/earth/kazflagmod.glb", function(gltf) {
     kazakhflag = gltf.scene;
 
     kazakhflag.scale.set(0.05,0.05,0.05);
@@ -167,7 +167,7 @@ loaderkzflag.load('kazflagmod.glb', function(gltf) {
 
 let ukrflag;
 let animated_ukr;
-loaderkzflag.load('ukrflag.glb', function(gltf) {
+loaderkzflag.load("./Resources/earth/ukrflag.glb", function(gltf) {
     ukrflag = gltf.scene;
 
     ukrflag.scale.set(0.05,0.05,0.05);
@@ -190,7 +190,7 @@ loaderkzflag.load('ukrflag.glb', function(gltf) {
 
 let cadflag;
 let animated_cad;
-loaderkzflag.load('cadflagmod.glb', function(gltf) {
+loaderkzflag.load("./Resources/earth/cadflagmod.glb", function(gltf) {
     cadflag = gltf.scene;
     cadflag.scale.set(0.05,0.05,0.05);
     flagmap.set('cadid', cadflag.uuid);
@@ -213,7 +213,7 @@ loaderkzflag.load('cadflagmod.glb', function(gltf) {
 
 let swiflag;
 let animated_swi;
-loaderkzflag.load('swiflag.glb', function(gltf) {
+loaderkzflag.load("./Resources/earth/swiflag.glb", function(gltf) {
     swiflag = gltf.scene;
     swiflag.scale.set(0.05,0.05,0.05);
     flagmap.set('swissid', swiflag.uuid);
@@ -235,7 +235,7 @@ loaderkzflag.load('swiflag.glb', function(gltf) {
 
 let czeflag;
 let animated_cze;
-loaderkzflag.load('czeflag.glb', function(gltf) {
+loaderkzflag.load("./Resources/earth/czeflag.glb", function(gltf) {
     czeflag = gltf.scene;
     flagmap.set('czeid', czeflag.uuid);
     czeflag.scale.set(0.05,0.05,0.05);

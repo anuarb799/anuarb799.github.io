@@ -1,12 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<meta charset="utf-8">
+		<meta charset="UTF-8" />
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Anuar B.</title>
-		<link rel="stylesheet" href="styles.css">
+		<link rel="stylesheet" href="./styles.css">
+		<script type="importmap">
+			{
+				"imports": {
+					"three": "https://cdn.jsdelivr.net/npm/three@0.161/build/three.module.js",
+          "jsm/": "https://cdn.jsdelivr.net/npm/three@0.161/examples/jsm/"
+        }
+			}
+		</script>
 	</head>
 	<body>
-		<script type="module" src="/main.js"></script>
+		<script type="module" src="main.js"></script>
 		<div id="intro"></div>
 		<div id="ufo_prompt">Click on the UFO to see projects</div>
 		<div id="credits">
