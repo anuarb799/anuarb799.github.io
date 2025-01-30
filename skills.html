@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic HTML Website</title>
+    <link rel="stylesheet" href="st/styles.css">
+    <script href="script.js"></script>
+</head>
+<body>
+    
+    <header>
+        <div class="logo"> <a href="index.html">Anuar</a> </div>
+        <nav>
+            <ul>
+                <li><a href="skills.html">Skills</a></li>
+                <!-- <li><a href="personal.html">Personal</a></li>--> 
+            </ul>
+        </nav>
+    </header>
+
+    <aside class="side-nav">
+        <div class="nav-toggle">
+            <span></span> <span></span>
+            <span></span>
+        </div>
+        <nav class="nav-links">
+            <ul>
+                <li><a href="#mindmap">Skills</a></li>
+                <li><a href="#work-experience">Work Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <main>
+        <div id="mindmap" class="mindmap">
+            <div class="set" id="languages">
+                <div class="set-title">Languages</div>
+                <div class="orb-container">
+                    <div class="orb">C</div>
+                    <div class="orb">C++</div>
+                    <div class="orb">JavaScript</div>
+                    <div class="orb">Java</div>
+                    <div class="orb">Python</div>
+                    <div class="orb">C#</div>
+                    <div class="orb">Verilog</div>
+                    <div class="orb">YAML</div>
+                    <div class="orb">Assembly RISC-V</div>
+                </div>
+            </div>
+
+            <div class="set" id="databases">
+                <div class="set-title">Databases</div>
+                <div class="orb-container">
+                    <div class="orb">SQL</div>
+                    <div class="orb">MySQL</div>
+                    <div class="orb">PostgreSQL</div>
+                    <div class="orb">MongoDB</div>
+                    <div class="orb">DB2</div>
+                </div>
+            </div>
+
+            <div class="set" id="web_d">
+                <div class="set-title">Web Development</div>
+                <div class="orb-container">
+                    <div class="orb">HTML/CSS</div>
+                    <div class="orb">React.js</div>
+                    <div class="orb">Angular</div>
+                    <div class="orb">Node.js</div>
+                    <div class="orb">Vue</div>
+                    <div class="orb">Next</div>
+                </div>
+            </div>
+
+            <div class="set" id="mobile_d">
+                <div class="set-title">Mobile Development</div>
+                <div class="orb-container">
+                    <div class="orb">Swift</div>
+                    <div class="orb">Kotlin</div>
+                    <div class="orb">React Native</div>
+                    <div class="orb">Flutter</div>
+                </div>
+            </div>
+
+            <div class="set" id="ml">
+                <div class="set-title">Machine Learning</div>
+                <div class="orb-container">
+                    <div class="orb">PyTorch</div>
+                    <div class="orb">TensorFlow</div>
+                    <div class="orb">Keras</div>
+                    <div class="orb">OpenCV</div>
+                    <div class="orb">HuggingFace</div>
+                </div>
+            </div>
+
+            <div class="set" id="cloud">
+                <div class="set-title">Cloud Services</div>
+                <div class="orb-container">
+                    <div class="orb">AWS</div>
+                    <div class="orb">Azure</div>
+                    <div class="orb">Firebase</div>
+                </div>
+            </div>
+
+            <div class="set" id="dev_ops">
+                <div class="set-title">DevOps</div>
+                <div class="orb-container">
+                    <div class="orb">Docker</div>
+                    <div class="orb">Kubernetes</div>
+                    <div class="orb">Jenkins</div>
+                    <div class="orb">Git</div>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="experience-projects">
+
+            <section class="work-experience">
+                <h2>Work Experience</h2>
+                <div id="work-experience" class="experience-entry">
+                    <h3>Collins Aerospace</h3>
+                    <p>CO-OP Student | 09/03/2024 - Current</p>
+                    <ul>
+                        <li>Working on an internal tool written in Python (PyGUI) to create seamless processing of actions on the machine floor and the operators.</li>
+                        <li>Management of an SQL server: administrative and end-user level.</li>
+                        <li>Creating and maintaining robust desktop apps (.NET & C#) with a creative approach for machine floor operators.</li>
+                    </ul>
+                </div>
+        
+                <div class="experience-entry">
+                    <h3>TengriNews</h3>
+                    <p>Software Engineering Intern | 07/01/2024 - 08/30/2024</p>
+                    <ul>
+                        <li>Worked in the data science/ML department at Tengri News.</li>
+                        <li>Processed more than 1M comments for sentiment analysis (RoBERTa). Challenges involved training the model for Kazakh & Russian languages with various approaches (translation through an API & creating own encodings).</li>
+                        <li>Created a prototype for a hybrid recommendation system, which was initially based on LightFM. End product was able to recommend articles to users (of which ~70% found to be interested in).</li>
+                    </ul>
+                </div>
+
+                <div class="experience-entry">
+                    <h3>Jusan Invest JSC</h3>
+                    <p>Software Engineering Intern | 06/01/2023 - 08/20/2023</p>
+                    <ul>
+                        <li>Worked in the frontend team of “Jusan Invest”, a subsidiary of one of Kazakhstan’s largest banks Jusan focusing on investment banking.</li>
+                        <li>Developed a new regression testing suite, covering major frontend components of the Jusan web application using Cypress and Selenium frameworks, which helped reduce the amount of code bugs by 23%.</li>
+                        <li>Implemented a test coverage visualization tool & maintained pipelines (Docker) in GitLab</li>
+                        <li>Collaborated in the development of a limited time event at Jusan Invest: “Raffle” where I was a part of the team responsible for developing frontend for the mobile application (React Native).</li>
+                    </ul>
+                </div>
+                </section>
+        
+            <section class="projects">
+                <h2>Projects</h2>
+                <div id="projects" class="project-entry">
+                    <h3>Geographic Information System</h3>
+                    <p>Created as part of the ECE297 course (Software Design and Communication)</p>
+                    <div class="for-projects">
+                        <div class="b-points">
+                            <ul>
+                                <li>Coding done in C/C++</li>
+                                <li>Graphics Library: OpenGL</li>
+                                <li>Raw Geographic Data: OpenStreetMap</li>
+                                <li>Live Traffic Data: TomTom</li>
+                                <li>Live Weather Data: OpenWeatherMap</li>
+                                <li>Pathfinding: A* & Dijkstra</li>
+                                <li>Smart Text Suggestions: BK-Trees</li>
+                                <li>Level of Detail Loaded According to Zoom Level for Responsiveness</li>
+                            </ul>
+                        </div>
+                        <div class="media-projects">
+                            <iframe  src="https://www.youtube.com/embed/5z04O_qTp3s" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="project-entry">
+                    <h3>Acne Detection & Localization</h3>
+                    <p>Created as part of the APS360 course (Applied Fundamentals of Deep Learning)</p>
+                    <div class="for-projects">
+                        <div class="b-points">
+                            <ul>
+                                <li>Coding done in Python</li>
+                                <li>Libraries Used: PyTorch, Numpy, Pandas</li>
+                                <li>ACNE04 Dataset</li>
+                                <li>Data Processing: Removing Poor Quality Images Using Hugging Face</li>
+                                <li>Trying Out Various Architectures, Ultimately a Simple Architecture Was Chosen Due to Poor Quality of Data</li>
+                                <li>Development of RCNN Algorithm</li>
+                                <li>Accuracy: 62% Precision: 73%</li>
+                            </ul>
+                        </div>
+                        <div class="media-projects">
+                            <img src="Resources/acne_demo.jpg">
+                        </div>
+                    </div>
+                </div>
+                <div class="project-entry">
+                    <h3>Digital Pen</h3>
+
+                    <div class="for-projects">
+                        <div class="b-points">
+                            <ul>
+                                <li>Microcontroller Used: STM32F4 series</li>
+                                <li>MPU6050 (Accelerometer + Gyroscope)</li>
+                                <li>Peripheral is attached on top of a regular bullet pen (3D printed model)</li>
+                                <li>Position of the pen is estimated using readings from gyroscope and accelerometer based on Kalman filter (Complementary Filter in earlier iterations)</li>
+                                <li>Then when a user draws something on regular paper (or on any medium), we get the copy of the drawing in digital format</li>
+                                <li>Communication with I2C (DMA)</li>
+                            </ul>
+                        </div>
+                        <div class="media-projects">
+                            <img src="Resources/pen_demo.png">
+                        </div>
+                    </div>
+                </div>
+                </section>
+        
+        </div>
+
+        <script src="script.js"></script>
+    </main>
+</body>
+</html>
