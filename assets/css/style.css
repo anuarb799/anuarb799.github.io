@@ -364,6 +364,14 @@ h3 {
   width: 100%;
 }
 
+#load_proj{
+  background-color: #24305e;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  cursor: pointer;
+}
+
 .waves-effect.waves-blue .waves-ripple {
   /* The alpha value allows the text and background color
    of the button to still show through. */

@@ -353,6 +353,13 @@ Backend development (.NET).
       </div>
     </section>
 
+<section id="recent_projects" class="section scrollspy">
+<h3 class="page-title white-text teal">Recent Projects</h3>
+<div id="recent_project_cont">
+</div>
+<button id="load_proj">Load More</button>
+</section>
+
     <!-- Fourth Section: Projects -->
     <section id="projects" class="section scrollspy">
       <h3 class="page-title white-text teal">Projects</h3>
@@ -671,6 +678,48 @@ Backend development (.NET).
         closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
       })
     })
+  </script>
+
+  <script>
+    const projects = [
+      {
+        title: "Petter Griffin Maps",
+        description: "Modern & interactive GIS appealing towards Family Guy fans",
+        image: "assets/assignment_images/project_img.png"
+      },
+      {
+        title: "Smart Pen",
+        description: "Pen that tracks your movement and copies your notes in digital format",
+        image: "assets/assignment_images/smartpen.png"
+      }
+    ]
+    let ind = 0;
+
+    function projectCr(project){
+      const projectDiv = document.createElement("div");
+      projectDiv.classList.add("card");
+
+      projectDiv.innerHTML = `
+        <h4>${project.title}</h4>
+      <img src="${project.image}" alt="${project.title}" style="max-width:100%; height:auto;" />
+      <p>${project.description}</p>
+      `;
+      return projectDiv;
+    }
+
+    function loadNext() {
+    if (ind < projects.length) {
+      const container = document.getElementById("recent_project_cont");
+      const projectElement = projectCr(projects[ind]);
+      container.appendChild(projectElement);
+      ind++;
+    }
+  }
+
+  window.addEventListener("DOMContentLoaded", () => {
+    document.getElementById("load_proj").addEventListener("click", loadNext);
+  });
+
   </script>
 </body>
 
