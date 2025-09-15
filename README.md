@@ -13,3 +13,9 @@ This repository is a clone of https://github.com/varadbhogayata/varadbhogayata.g
 ![screenshot](assets/assignment_images/activity2.png)
 
 ![screenshot](assets/assignment_images/assignment_2_o.png)
+
+## Activity 3
+
+![screenshot](assets/assignment_images/activ3.png)
+
+![screenshot](assets/assignment_images/activ33.png)
