@@ -152,14 +152,16 @@ export default async function Page({
           <TooltipProvider>
             {previous && (
               <TooltipRoot>
-                <TooltipTrigger asChild>
-                  <Button variant="secondary" size="icon-sm" asChild>
-                    <Link href={`/blog/${previous.slug}`}>
-                      <ArrowLeftIcon />
-                      <span className="sr-only">Previous</span>
-                    </Link>
-                  </Button>
-                </TooltipTrigger>
+                <TooltipTrigger
+                  render={
+                    <Button variant="secondary" size="icon-sm" asChild>
+                      <Link href={`/blog/${previous.slug}`}>
+                        <ArrowLeftIcon />
+                        <span className="sr-only">Previous</span>
+                      </Link>
+                    </Button>
+                  }
+                />
 
                 <TooltipContent className="pr-2 pl-3">
                   <div className="flex items-center gap-3">
@@ -174,14 +176,16 @@ export default async function Page({
 
             {next && (
               <TooltipRoot>
-                <TooltipTrigger asChild>
-                  <Button variant="secondary" size="icon-sm" asChild>
-                    <Link href={`/blog/${next.slug}`}>
-                      <span className="sr-only">Next</span>
-                      <ArrowRightIcon />
-                    </Link>
-                  </Button>
-                </TooltipTrigger>
+                <TooltipTrigger
+                  render={
+                    <Button variant="secondary" size="icon-sm" asChild>
+                      <Link href={`/blog/${next.slug}`}>
+                        <span className="sr-only">Next</span>
+                        <ArrowRightIcon />
+                      </Link>
+                    </Button>
+                  }
+                />
 
                 <TooltipContent className="pr-2 pl-3">
                   <div className="flex items-center gap-3">
