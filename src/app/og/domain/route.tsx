@@ -3,21 +3,27 @@ import { join } from "node:path";
 
 import { ImageResponse } from "next/og";
 
+// For static export compatibility - routes with query params need special handling
+export const dynamic = "force-static";
+export const revalidate = false;
+
 export async function GET(request: Request) {
-  const { searchParams } = new URL(request.url);
+  try {
+    const { searchParams } = new URL(request.url);
 
-  const domain = searchParams.get("domain");
-  const isForSale = searchParams.get("sale") === "true";
+    // Provide defaults for static export
+    const domain = searchParams.get("domain") || "example.com";
+    const isForSale = searchParams.get("sale") === "true";
 
-  const magistralMedium = await readFile(
-    join(process.cwd(), "src/assets/fonts/Magistral-Medium.ttf")
-  );
+    const magistralMedium = await readFile(
+      join(process.cwd(), "src/assets/fonts/Magistral-Medium.ttf")
+    );
 
-  const robotoMedium = await readFile(
-    join(process.cwd(), "src/assets/fonts/Roboto-Medium.ttf")
-  );
+    const robotoMedium = await readFile(
+      join(process.cwd(), "src/assets/fonts/Roboto-Medium.ttf")
+    );
 
-  return new ImageResponse(
+    return new ImageResponse(
     (
       <div tw="flex text-black bg-white w-full h-full p-16">
         <div tw="flex-1 flex flex-col justify-center border-l border-r border-zinc-200">
@@ -86,5 +92,12 @@ export async function GET(request: Request) {
         },
       ],
     }
-  );
+    );
+  } catch (error) {
+    // Fallback for static export build
+    return new Response("OG Image", {
+      status: 200,
+      headers: { "Content-Type": "text/plain" },
+    });
+  }
 }

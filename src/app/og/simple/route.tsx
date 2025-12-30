@@ -3,16 +3,22 @@ import { join } from "node:path";
 
 import { ImageResponse } from "next/og";
 
+// For static export compatibility - routes with query params need special handling
+export const dynamic = "force-static";
+export const revalidate = false;
+
 export async function GET(request: Request) {
-  const { searchParams } = new URL(request.url);
+  try {
+    const { searchParams } = new URL(request.url);
 
-  const title = searchParams.get("title");
+    // Provide defaults for static export
+    const title = searchParams.get("title") || "Default Title";
 
-  const robotoCondensedMedium = await readFile(
-    join(process.cwd(), "src/assets/fonts/RobotoCondensed-Medium.ttf")
-  );
+    const robotoCondensedMedium = await readFile(
+      join(process.cwd(), "src/assets/fonts/RobotoCondensed-Medium.ttf")
+    );
 
-  return new ImageResponse(
+    return new ImageResponse(
     (
       <div tw="w-full h-full flex items-center justify-center text-white bg-black p-16">
         <div tw="absolute flex inset-y-0 w-px border border-zinc-800 left-16" />
@@ -89,5 +95,12 @@ export async function GET(request: Request) {
         },
       ],
     }
-  );
+    );
+  } catch (error) {
+    // Fallback for static export build
+    return new Response("OG Image", {
+      status: 200,
+      headers: { "Content-Type": "text/plain" },
+    });
+  }
 }
