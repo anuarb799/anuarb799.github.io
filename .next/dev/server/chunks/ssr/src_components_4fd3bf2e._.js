@@ -1,0 +1,32 @@
+module.exports = [
+"[project]/src/components/brand-context-menu.tsx [app-rsc] (ecmascript, next/dynamic entry, async loader)", ((__turbopack_context__) => {
+
+__turbopack_context__.v((parentImport) => {
+    return Promise.all([
+  "server/chunks/ssr/src_components_brand-context-menu_tsx_7a94fee2._.js"
+].map((chunk) => __turbopack_context__.l(chunk))).then(() => {
+        return parentImport("[project]/src/components/brand-context-menu.tsx [app-rsc] (ecmascript, next/dynamic entry)");
+    });
+});
+}),
+"[project]/src/components/mobile-nav.tsx [app-rsc] (ecmascript, next/dynamic entry, async loader)", ((__turbopack_context__) => {
+
+__turbopack_context__.v((parentImport) => {
+    return Promise.all([
+  "server/chunks/ssr/src_components_mobile-nav_tsx_5c3ee51a._.js"
+].map((chunk) => __turbopack_context__.l(chunk))).then(() => {
+        return parentImport("[project]/src/components/mobile-nav.tsx [app-rsc] (ecmascript, next/dynamic entry)");
+    });
+});
+}),
+"[project]/src/components/scroll-to-top.tsx [app-rsc] (ecmascript, next/dynamic entry, async loader)", ((__turbopack_context__) => {
+
+__turbopack_context__.v((parentImport) => {
+    return Promise.all([
+  "server/chunks/ssr/src_components_scroll-to-top_tsx_627ada56._.js"
+].map((chunk) => __turbopack_context__.l(chunk))).then(() => {
+        return parentImport("[project]/src/components/scroll-to-top.tsx [app-rsc] (ecmascript, next/dynamic entry)");
+    });
+});
+}),
+];
