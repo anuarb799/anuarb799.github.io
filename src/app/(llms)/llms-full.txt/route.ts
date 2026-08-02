@@ -41,7 +41,7 @@ ${EXPERIENCES.map((item) =>
       const skills = position.skills?.map((skill) => skill).join(", ") || "N/A";
       return `### ${position.title} | ${item.companyName}\n\nDuration: ${position.employmentPeriod.start} - ${position.employmentPeriod.end || "Present"}\n\nSkills: ${skills}\n\n${position.description?.trim()}`;
     })
-    .join("\n\n")
+    .join("\n\n"),
 ).join("\n\n")}
 `;
 
@@ -50,7 +50,8 @@ const projectsText = `## Projects
 ${PROJECTS.map((item) => {
   const skills = `\n\nSkills: ${item.skills.join(", ")}`;
   const description = item.description ? `\n\n${item.description.trim()}` : "";
-  return `### ${item.title}\n\nProject URL: ${item.link}${skills}${description}`;
+  const contribution = `\n\nContribution: ${item.contribution}`;
+  return `### ${item.title}${skills}${description}${contribution}`;
 }).join("\n\n")}
 `;
 
@@ -67,8 +68,8 @@ async function getBlogContent() {
   const text = await Promise.all(
     allPosts.map(
       async (item) =>
-        `---\ntitle: "${item.metadata.title}"\ndescription: "${item.metadata.description}"\nlast_updated: "${format(new Date(item.metadata.updatedAt), "MMMM d, yyyy")}"\nsource: "${SITE_INFO.url}/blog/${item.slug}"\n---\n\n${await getLLMText(item)}`
-    )
+        `---\ntitle: "${item.metadata.title}"\ndescription: "${item.metadata.description}"\nlast_updated: "${format(new Date(item.metadata.updatedAt), "MMMM d, yyyy")}"\nsource: "${SITE_INFO.url}/blog/${item.slug}"\n---\n\n${await getLLMText(item)}`,
+    ),
   );
   return text.join("\n\n");
 }
