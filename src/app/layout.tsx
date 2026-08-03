@@ -117,10 +117,13 @@ export default function RootLayout({
       </head>
 
       <body>
+        <Script
+          src="https://cloud.umami.is/script.js"
+          data-website-id="6bd37a45-ee72-4c2e-b68a-aa9e969869f0"
+          strategy="afterInteractive"
+        />
         <Providers>
-          <NuqsAdapter>
-            {children}
-          </NuqsAdapter>
+          <NuqsAdapter>{children}</NuqsAdapter>
         </Providers>
       </body>
     </html>
